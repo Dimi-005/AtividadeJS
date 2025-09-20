@@ -1,32 +1,32 @@
-/*Questã 1*/ 
-let numero = -5; 
+/*Questã 1*/
+let numero = -5;
 if (numero > 0) {
-  console.log("O número é positivo");
+    console.log("O número é positivo");
 } else if (numero < 0) {
-  console.log("O número é negativo");
+    console.log("O número é negativo");
 } else {
-  console.log("O número é zero");
+    console.log("O número é zero");
 }
 
 /*Questã 2*/
 let idade = 16;
 
 if (idade >= 18) {
-  console.log("Maior de idade");
+    console.log("Maior de idade");
 } else {
-  console.log("Menor de idade");
+    console.log("Menor de idade");
 }
 
 /*Questã 3*/
 for (let i = 1; i <= 10; i++) {
-  console.log(i);
+    console.log(i);
 }
 
 /*Questã 4*/
-let num = 7; // escolha a tabuada
+let num = 7;
 
 for (let i = 1; i <= 10; i++) {
-  console.log(`${num} x ${i} = ${num * i}`);
+    console.log(`${num} x ${i} = ${num * i}`);
 }
 
 
@@ -34,44 +34,44 @@ for (let i = 1; i <= 10; i++) {
 let contador = 10;
 
 while (contador >= 1) {
-  console.log(contador);
-  contador--;
+    console.log(contador);
+    contador--;
 }
 
 /*Questã 6*/
 let senha;
 do {
-  senha = "1234"; // simulação (se quiser testar com prompt: prompt("Digite a senha:"))
+    senha = "1234"; 
 } while (senha !== "1234");
 
 console.log("Acesso liberado!");
 
 /*Questã 7*/
 function somar(a, b) {
-  return a + b;
+    return a + b;
 }
 
-console.log(somar(5, 3)); // 8
+console.log(somar(5, 3));
 
 /*Questão 8*/
 const ehPar = (n) => n % 2 === 0;
 
-console.log(ehPar(4)); // true
-console.log(ehPar(7)); // false
+console.log(ehPar(4)); 
+console.log(ehPar(7)); 
 
 /* (9) não consegui fazer direito então deixei em branco*/
 
 /*Questão 10*/
 function ehPrimo(num) {
-  if (num <= 1) return false; // 0 e 1 não são primos
+    if (num <= 1) return false;
 
-  for (let i = 2; i < num; i++) {
-    if (num % i === 0) {
-      return false; // achou um divisor
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return false;
+        }
     }
-  }
-  return true; // não achou nenhum divisor
+    return true;
 }
 
-console.log(ehPrimo(7));  // true
-console.log(ehPrimo(10)); // false
+console.log(ehPrimo(7));
+console.log(ehPrimo(10));
